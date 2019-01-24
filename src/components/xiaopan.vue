@@ -12,7 +12,7 @@
     <div class="search_frame">
         <div class="logotwo"></div>
         <div class="search_frame_ul">
-        <button name="bt" class="btone" @click="btchange" style="background= '#4565bb'">新房</button>
+        <button name="bt" class="btone" @click="btchange">新房</button>
         <button name="bt" class="bttwo" @click="btchange">二手房</button>
         <button name="bt" class="btthree" @click="btchange">租房</button>
         <button name="bt" class="btfour" @click="btchange">商业地产</button></div>
@@ -194,6 +194,9 @@ export default {
     top: 150px;
     left: 60px;
     transition:left .3s;
+}
+.search_frame button:first-child{
+    background: #4565bb;
 }
 @media screen and (min-width:1920px){
     .background_image{
